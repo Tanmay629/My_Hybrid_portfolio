@@ -1,0 +1,165 @@
+/* index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === NEW: Base & Theme Setup === */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* This ensures the background component shows through */
+  @apply font-sans bg-transparent;
+}
+
+/* === EXISTING STYLES (UNCHANGED) === */
+
+/* 🌈 Glass Card */
+.glass-card {
+  position: relative;
+  border-radius: 1rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  overflow: visible;
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+
+.dark .glass-card {
+  background: rgba(0, 0, 0, 0.4); /* Dark mode */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 🌈 Rainbow Border */
+.glass-card::before {
+  content: "";
+  position: absolute;
+  inset-block-start: 0.75rem;
+  inset-inline-start: 0.75rem;
+  inline-size: 2rem;
+  block-size: 2rem;
+  border-block-start: 3px solid transparent;
+  border-inline-start: 3px solid transparent;
+  border-image: linear-gradient(135deg, #ff6ec4, #7873f5, #4ade80, #facc15);
+  border-image-slice: 1;
+  border-radius: 0.5rem;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.glass-card:hover::before {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.glass-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 1rem;
+  padding: 2px;
+  background: linear-gradient(
+    90deg,
+    #ff6ec4,
+    #7873f5,
+    #4ade80,
+    #facc15
+  );
+  background-size: 300% 300%;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+
+  /* Simulate border around card */
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+}
+
+.glass-card:hover::after {
+  opacity: 1;
+  animation: rainbow 3s linear infinite;
+}
+
+@keyframes rainbow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(90deg, #00ffff, #8a2be2, #ff00ff, #00ffff);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Tech Icons */
+.tech-icon {
+  inline-size: 34px;
+  block-size: 34px;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 6px;
+  border-radius: 8px;
+}
+
+@keyframes slowSpin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.animate-slowSpin {
+  animation: slowSpin 40s linear infinite;
+}
+.animate-slowSpinSlow {
+  animation: slowSpin 80s linear infinite;
+}
+
+@keyframes floatDot {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+
+
+/* === NEW: Keyframes for Animated Blobs === */
+@keyframes animate-blob-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(40px, -60px) scale(1.1); }
+  50% { transform: translate(80px, 20px) scale(0.9); }
+  75% { transform: translate(-20px, 50px) scale(1.05); }
+}
+
+@keyframes animate-blob-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(-50px, 30px) scale(1.1); }
+  50% { transform: translate(-20px, -70px) scale(0.95); }
+  75% { transform: translate(40px, -20px) scale(1); }
+}
+
+@keyframes animate-blob-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(30px, 30px) scale(1.1); }
+  50% { transform: translate(-40px, -40px) scale(0.9); }
+  75% { transform: translate(20px, -20px) scale(1.05); }
+}

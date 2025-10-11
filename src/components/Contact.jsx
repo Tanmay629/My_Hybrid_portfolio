@@ -39,7 +39,7 @@ export default function Contact({ langIndex = 0 }) {
         {/* Email Icon */}
         <a
           href="mailto:tanmaytayal4@gmail.com"
-          className={`text-4xl ${iconColors[langIndex]} hover:text-red-400 transition-colors`}
+          className={`text-4xl ${iconColors[langIndex]} hover:text-red-400 transition-colors hover:scale-110`}
         >
           <FaEnvelope />
         </a>
@@ -49,7 +49,7 @@ export default function Contact({ langIndex = 0 }) {
           href="https://github.com/Tanmay629"
           target="_blank"
           rel="noopener noreferrer"
-          className={`text-4xl ${iconColors[langIndex]} hover:text-black transition-colors`}
+          className={`text-4xl ${iconColors[langIndex]} hover:text-black dark:hover:text-white transition-colors hover:scale-110`}
         >
           <FaGithub />
         </a>
@@ -59,7 +59,7 @@ export default function Contact({ langIndex = 0 }) {
           href="https://linkedin.com/in/tanmay-tayal"
           target="_blank"
           rel="noopener noreferrer"
-          className={`text-4xl ${iconColors[langIndex]} hover:text-blue-400 transition-colors`}
+          className={`text-4xl ${iconColors[langIndex]} hover:text-blue-400 transition-colors hover:scale-110`}
         >
           <FaLinkedin />
         </a>

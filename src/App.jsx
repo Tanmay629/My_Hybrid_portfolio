@@ -10,6 +10,7 @@ import Experience from "./components/Experience";
 import Certifications from "./components/Certifications";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Resume from "./components/Resume";
 
 export default function App() {
   // Language index syncs the animated circle color in the navbar
@@ -33,6 +34,7 @@ export default function App() {
       <Projects/>
       <Experience/>
       <Certifications/>
+      <Resume/>
       <Contact/>
       <Footer/>
     </main>

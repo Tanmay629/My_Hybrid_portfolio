@@ -42,7 +42,7 @@ export default function Hero({ onLanguageChange }) {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Hi <span role="img" aria-label="wave">👋</span>
+        Hi <span role="img" aria-label="wave" className="ani">👋</span>
       </motion.h1>
 
       <motion.div

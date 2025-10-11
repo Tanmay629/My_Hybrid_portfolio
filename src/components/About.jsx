@@ -15,7 +15,7 @@ export default function About() {
         viewport={{ once: true }}
       >
         <h2 className="text-4xl font-bold mb-3 gradient-text">About Me</h2>
-        <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+        <p className="text-lg font-serif max-w-3xl mx-auto">
           I'm <span className="font-semibold">Tanmay Tayal</span>, a Full Stack Developer driven by a passion for building responsive and scalable web applications. I bring creative UI/UX thinking, optimized feature development, and seamless product delivery with every project I touch.
         </p>
       </motion.div>
@@ -28,10 +28,10 @@ export default function About() {
         viewport={{ once: true }}
       >
         {/* Card 1 */}
-        <div className="glass-card">
-          <div className="flex items-center gap-3 mb-2">
+        <div className="glass-card hover:scale-105">
+          <div className="flex items-center gap-3 mb-2 ">
             <FaProjectDiagram className="text-xl text-gray-800 dark:text-white" />
-            <h3 className="text-lg font-bold text-gray-800 dark:text-white">My Approach</h3>
+            <h3 className="text-lg font-bold  text-purple-500">My Approach</h3>
           </div>
           <ul className="text-gray-700 dark:text-gray-300 list-disc pl-6 space-y-1">
             <li>Clean code, proper architecture</li>
@@ -42,10 +42,10 @@ export default function About() {
         </div>
 
         {/* Card 2 */}
-        <div className="glass-card">
+        <div className="glass-card hover:scale-105 ">
           <div className="flex items-center gap-3 mb-2">
             <FaServer className="text-xl text-gray-800 dark:text-white" />
-            <h3 className="text-lg font-bold text-gray-800 dark:text-white">Academic Background</h3>
+            <h3 className="text-lg font-bold  text-purple-500">Academic Background</h3>
           </div>
           <ul className="text-gray-700 dark:text-gray-300 list-disc pl-6 space-y-1">
             <li>B.Tech CSE, DIT University</li>
@@ -55,10 +55,10 @@ export default function About() {
         </div>
 
         {/* Card 3 */}
-        <div className="glass-card">
+        <div className="glass-card hover:scale-105">
           <div className="flex items-center gap-3 mb-2">
             <FaBullseye className="text-xl text-gray-800 dark:text-white" />
-            <h3 className="text-lg font-bold text-gray-800 dark:text-white">Current Focus</h3>
+            <h3 className="text-lg font-bold  text-purple-500">Current Focus</h3>
           </div>
           <ul className="text-gray-700 dark:text-gray-300 list-disc pl-6 space-y-1">
             <li>Backend Mastery(Node|Express|REST APIs) </li>
@@ -68,10 +68,10 @@ export default function About() {
         </div>
 
         {/* Card 4 */}
-        <div className="glass-card">
+        <div className="glass-card hover:scale-105">
           <div className="flex items-center gap-3 mb-2">
             <FaCheckCircle className="text-xl text-gray-800 dark:text-white" />
-            <h3 className="text-lg font-bold text-gray-800 dark:text-white">What Sets Me Apart</h3>
+            <h3 className="text-lg font-bold  text-purple-500">What Sets Me Apart</h3>
           </div>
           <ul className="text-gray-700 dark:text-gray-300 list-disc pl-6 space-y-1">
             <li>Neon-aesthetic| Minimal Mature design sense </li>

@@ -34,7 +34,7 @@ export default function Projects() {
         Featured Projects
       </motion.h2>
       <motion.p
-        className="text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto text-lg"
+        className="mb-12 max-w-2xl mx-auto text-lg font-serif"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}
@@ -53,8 +53,8 @@ export default function Projects() {
             transition={{ delay: i * 0.2 }}
           >
             <div>
-              <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
-              <p className="text-sm text-gray-300 mb-4">{project.description}</p>
+              <h3 className="text-xl font-semibold text-purple-500 mb-2">{project.title}</h3>
+              <p className="text-sm mb-4">{project.description}</p>
 
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((t, index) => (
@@ -70,7 +70,7 @@ export default function Projects() {
 
             {/* Footer & Links */}
             <div className="flex items-center gap-4 text-sm">
-              <a
+              {/* <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -78,16 +78,16 @@ export default function Projects() {
               >
                 <FaGithub />
                 GitHub
-              </a>
-              <a
+              </a> */}
+               {/* <a
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 hover:text-white text-gray-400 transition"
               >
                 <FaExternalLinkAlt />
-                Live Demo
-              </a>
+                Live Demo 
+               </a>  */}
             </div>
           </motion.div>
         ))}

@@ -18,7 +18,7 @@ export default function Experience() {
       </motion.h2>
 
       <motion.p
-        className="text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto text-lg"
+        className="mb-12 max-w-2xl mx-auto text-lg font-serif"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}

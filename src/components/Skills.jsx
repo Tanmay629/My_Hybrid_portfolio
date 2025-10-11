@@ -57,7 +57,7 @@ export default function Skills() {
       </motion.h2>
 
       <motion.p
-        className="text-white-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto text-lg"
+        className="font-serif mb-12 max-w-2xl mx-auto text-lg"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, amount: 0.5 }}
@@ -77,9 +77,9 @@ export default function Skills() {
       className={`px-4 py-2 text-sm md:text-base font-semibold rounded-full transition-colors duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-900
         ${
           activeCategory === category.name
-            ? `bg-white-500 text-white-600 shadow-lg `
+            ? `shadow-lg `
             // 2. Add hover:bg-purple-600 ONLY to the inactive state
-            : `bg-white-500 text-white-400 hover:bg-white-500 `
+            : `hover:bg-white-500 `
         }`}
       
       // 3. Framer Motion animation props
@@ -111,7 +111,7 @@ export default function Skills() {
               className="glass-card p-5 relative"
             >
               <div className="flex justify-between items-center mb-1">
-                <h3 className="text-lg font-semibold text-white">
+                <h3 className="text-lg font-semibold  text-purple-500">
                   {skill.name}
                 </h3>
                 <p className="text-sm text-copper-400">
@@ -133,7 +133,7 @@ export default function Skills() {
                 />
               </div>
 
-              <p className="text-xs text-gray-400">{skill.description}</p>
+              <p className="text-xs">{skill.description}</p>
             </motion.div>
           ))}
         </AnimatePresence>

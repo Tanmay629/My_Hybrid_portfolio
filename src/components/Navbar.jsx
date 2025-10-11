@@ -41,7 +41,7 @@ export default function Navbar({ langIndex }) {
           href="https://github.com/Tanmay629"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-copper-400 hover:text-white transition text-[35px]"
+          className="text-copper-400 hover:text-gray-600 transition text-[35px] hover:scale-110"
         >
           <FaGithub />
         </a>
@@ -51,7 +51,7 @@ export default function Navbar({ langIndex }) {
           href="https://linkedin.com/in/tanmay-tayal"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-copper-400 hover:text-blue-400 transition text-[36px]"
+          className="text-copper-400 hover:text-blue-400 transition text-[36px] hover:scale-110"
         >
           <FaLinkedin />
         </a>

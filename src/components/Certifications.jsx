@@ -20,7 +20,7 @@ const certifications = [
     link: "https://www.coursera.org/account/accomplishments/certificate/IQE035BMUI3H",
   },
   {
-    title: "Python fot AI",
+    title: "Python for AI",
     issuer: "Coursera",
     link: "https://www.coursera.org/account/accomplishments/certificate/21GEX9AM1LI6",
   },

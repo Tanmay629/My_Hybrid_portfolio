@@ -61,7 +61,7 @@ export default function About() {
             <h3 className="text-lg font-bold  text-purple-500">Current Focus</h3>
           </div>
           <ul className="text-gray-700 dark:text-gray-300 list-disc pl-6 space-y-1">
-            <li>Backend Mastery(Node|Express|REST APIs) </li>
+            <li>Backend Mastery(Node | Express | REST APIs) </li>
             <li>3D & animations(Three.js|Framer-Motion)</li>
             <li>UI/UX(Modern Responsive UI|UX patterns)</li>
           </ul>
@@ -74,7 +74,7 @@ export default function About() {
             <h3 className="text-lg font-bold  text-purple-500">What Sets Me Apart</h3>
           </div>
           <ul className="text-gray-700 dark:text-gray-300 list-disc pl-6 space-y-1">
-            <li>Neon-aesthetic| Minimal Mature design sense </li>
+            <li>Neon-aesthetic | Minimal Mature design sense </li>
             <li>JWT & Bcrypt implementation</li>
             <li>OpenAI Tool Integrations</li>
           </ul>

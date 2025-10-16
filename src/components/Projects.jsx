@@ -8,14 +8,14 @@ const projects = [
     description:
       "A responsive, animated React portfolio inspired by Brittany Chiang and Ali Mohsin. Showcases developer skills, animations, and projects.",
     tech: ["React.js", "Framer-Motion", "TailwindCSS"],
-    github: "https://github.com/tanmaytayal/hybrid-portfolio",
-    demo: "https://tanmay-portfolio.netlify.app/", // Example
+    github: "https://github.com/Tanmay629/My_Hybrid_portfolio",
+    demo: "https://tt-hybrid-portfolio.vercel.app/", // Example
   },
   {
     title: "EcoMart",
     description:
       "A sustainable e-commerce MERN stack prototype with JWT authentication and mock payment using TailwindCSS.",
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT","Framer-Motion", "TailwindCSS"],
     github: "https://github.com/tanmaytayal/ecomart",
     demo: "https://ecomart-prototype.vercel.app/", // Example
   },
@@ -70,7 +70,7 @@ export default function Projects() {
 
             {/* Footer & Links */}
             <div className="flex items-center gap-4 text-sm">
-               {/* <a
+                {/* <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -78,7 +78,7 @@ export default function Projects() {
               >
                 <FaGithub />
                 GitHub
-              </a>  */}
+              </a>   */}
                {/* <a
                 href={project.demo}
                 target="_blank"

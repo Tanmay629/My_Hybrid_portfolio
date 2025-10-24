@@ -82,7 +82,7 @@ export default function Projects() {
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 hover:text-white text-gray-400 transition"
+                className="flex items-center gap-1 hover:text-blue-400 text-gray-500 transition"
               >
                 <FaGithub />
                 GitHub
@@ -91,7 +91,7 @@ export default function Projects() {
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1 hover:text-white text-gray-400 transition"
+                className="flex items-center gap-1 hover:text-blue-400 text-gray-500 transition"
               >
                 <FaExternalLinkAlt />
                 Live Demo

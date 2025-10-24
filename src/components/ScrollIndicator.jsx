@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion"; //eslint-disable-line
 
 export default function ScrollIndicator() {

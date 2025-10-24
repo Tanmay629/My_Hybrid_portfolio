@@ -62,10 +62,10 @@ export default function Hero({ onLanguageChange }) {
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
       >
-        I'm a MERN Stack Developer | Node.js | React.js | Express.js | MongoDB | PHP | MySQL
+        MERN Stack Developer | Node.js | React.js | Express.js | MongoDB | PHP | MySQL
       </motion.p>
 
-      {/* 👇 Show scroll indicator only when atTop is true */}
+      
       {atTop && <ScrollIndicator />}
     </section>
   );

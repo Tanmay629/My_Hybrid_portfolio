@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion"; //eslint-disable-line
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
@@ -9,15 +8,23 @@ const projects = [
       "A responsive, animated React portfolio inspired by Brittany Chiang and Ali Mohsin. Showcases developer skills, animations, and projects.",
     tech: ["React.js", "Framer-Motion", "TailwindCSS"],
     github: "https://github.com/Tanmay629/My_Hybrid_portfolio",
-    demo: "https://tt-hybrid-portfolio.vercel.app/", // Example
+    demo: "https://tt-hybrid-portfolio.vercel.app/",
   },
   {
     title: "EcoMart",
     description:
-      "A sustainable e-commerce MERN stack prototype with JWT authentication and mock payment using TailwindCSS.",
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT","Framer-Motion", "TailwindCSS"],
-    github: "https://github.com/tanmaytayal/ecomart",
-    demo: "https://ecomart-prototype.vercel.app/", // Example
+      "A sustainable e-commerce MERN stack prototype with JWT authentication and mock payment using TailwindCSS.  **CURRENTLY UNDER MAINTENANCE!! **",
+    tech: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Framer-Motion",
+      "TailwindCSS",
+    ],
+    // github: "https://github.com/Tanmay629/ecomart",
+    // demo: "https://ecomart-prototype.vercel.app/",
   },
 ];
 
@@ -53,7 +60,9 @@ export default function Projects() {
             transition={{ delay: i * 0.2 }}
           >
             <div>
-              <h3 className="text-xl font-semibold text-purple-500 mb-2">{project.title}</h3>
+              <h3 className="text-xl font-semibold text-purple-500 mb-2">
+                {project.title}
+              </h3>
               <p className="text-sm mb-4">{project.description}</p>
 
               <div className="flex flex-wrap gap-2 mb-4">
@@ -68,9 +77,8 @@ export default function Projects() {
               </div>
             </div>
 
-            {/* Footer & Links */}
             <div className="flex items-center gap-4 text-sm">
-                {/* <a
+              <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -78,16 +86,16 @@ export default function Projects() {
               >
                 <FaGithub />
                 GitHub
-              </a>   */}
-               {/* <a
+              </a>
+              <a
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-1 hover:text-white text-gray-400 transition"
               >
                 <FaExternalLinkAlt />
-                Live Demo 
-               </a>  */}
+                Live Demo
+              </a>
             </div>
           </motion.div>
         ))}

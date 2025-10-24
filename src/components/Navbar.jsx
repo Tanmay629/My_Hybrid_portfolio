@@ -12,31 +12,31 @@ export default function Navbar({ langIndex }) {
   ];
 
   const scrollToTop = () => {
-    const heroSection = document.getElementById('hero'); // Adjust 'hero' to match your hero section's ID
+    const heroSection = document.getElementById("hero");
     if (heroSection) {
-      heroSection.scrollIntoView({ behavior: 'smooth' });
+      heroSection.scrollIntoView({ behavior: "smooth" });
     } else {
-      // Fallback to top of page if no hero ID
-      window.scrollTo({ insetBlockStart: 0, behavior: 'smooth' });
+      window.scrollTo({ insetBlockStart: 0, behavior: "smooth" });
     }
   };
 
   return (
     <nav className="w-full px-6 py-4 fixed top-0 left-0 z-40 flex items-center justify-between bg-transparent text-[35px]">
-      {/* 🔵 Left Side: Logo Circle + Name (as one clickable card) */}
-      <div 
+      <div
         className="flex items-center gap-3 cursor-pointer transition-colors hover:animate-bounce"
         onClick={scrollToTop}
       >
-        <div className={`w-6 h-6 rounded-full shadow-md ${colors[langIndex]}`}></div>
-        <span className={`text-xl font-semibold text-[28px] ${textColors[langIndex]} hover:block`}>
+        <div
+          className={`w-6 h-6 rounded-full shadow-md ${colors[langIndex]}`}
+        ></div>
+        <span
+          className={`text-xl font-semibold text-[28px] ${textColors[langIndex]} hover:block`}
+        >
           Tanmay
         </span>
       </div>
 
-      {/* 🌐 Right Side: Social Icons (GitHub & LinkedIn) */}
       <div className="flex items-center gap-5 pr-[50px]">
-        {/* GitHub Icon */}
         <a
           href="https://github.com/Tanmay629"
           target="_blank"
@@ -46,7 +46,6 @@ export default function Navbar({ langIndex }) {
           <FaGithub />
         </a>
 
-        {/* LinkedIn Icon */}
         <a
           href="https://linkedin.com/in/tanmay-tayal"
           target="_blank"

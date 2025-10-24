@@ -27,8 +27,8 @@ export default function Resume({ langIndex = 0 }) {
       </motion.p>
 
       <motion.a
-        href="/Tanmay_Tayal_resume.pdf" // Fixed: Correct path for public/ folder (move file to public/Tanmay_Tayal_resume.pdf)
-        download="Tanmay_Tayal_resume.pdf" // Fixed: Removed space before =, consistent casing
+        href="/Tanmay_Tayal_resume.pdf" 
+        download="Tanmay_Tayal_resume.pdf" 
         className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r ${buttonGradients[langIndex]} text-white font-semibold hover:opacity-90 transition-all`}
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}

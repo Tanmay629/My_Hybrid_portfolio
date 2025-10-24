@@ -1,12 +1,17 @@
-import React from "react";
 import {
-  FaProjectDiagram, FaServer, FaBullseye, FaCheckCircle,
+  FaProjectDiagram,
+  FaServer,
+  FaBullseye,
+  FaCheckCircle,
 } from "react-icons/fa";
 import { motion } from "framer-motion"; // eslint-disable-line
 
 export default function About() {
   return (
-    <section id="about" className="pt-10 pb-20 px-4 max-w-6xl mx-auto text-center">
+    <section
+      id="about"
+      className="pt-10 pb-20 px-4 max-w-6xl mx-auto text-center"
+    >
       <motion.div
         className="text-center mb-12"
         initial={{ opacity: 0, y: 40 }}
@@ -16,7 +21,10 @@ export default function About() {
       >
         <h2 className="text-4xl font-bold mb-3 gradient-text">About Me</h2>
         <p className="text-lg font-serif max-w-3xl mx-auto">
-          I'm <span className="font-semibold">Tanmay Tayal</span>, a Full Stack Developer driven by a passion for building responsive and scalable web applications. I bring creative UI/UX thinking, optimized feature development, and seamless product delivery with every project I touch.
+          I'm <span className="font-semibold">Tanmay Tayal</span>, a Full Stack
+          Developer driven by a passion for building responsive and scalable web
+          applications. I bring creative UI/UX thinking, optimized feature
+          development, and seamless product delivery with every project I touch.
         </p>
       </motion.div>
 
@@ -45,7 +53,9 @@ export default function About() {
         <div className="glass-card hover:scale-105 ">
           <div className="flex items-center gap-3 mb-2">
             <FaServer className="text-xl text-gray-800 dark:text-white" />
-            <h3 className="text-lg font-bold  text-purple-500">Academic Background</h3>
+            <h3 className="text-lg font-bold  text-purple-500">
+              Academic Background
+            </h3>
           </div>
           <ul className="text-gray-700 dark:text-gray-300 list-disc pl-6 space-y-1">
             <li>B.Tech CSE, DIT University</li>
@@ -58,7 +68,9 @@ export default function About() {
         <div className="glass-card hover:scale-105">
           <div className="flex items-center gap-3 mb-2">
             <FaBullseye className="text-xl text-gray-800 dark:text-white" />
-            <h3 className="text-lg font-bold  text-purple-500">Current Focus</h3>
+            <h3 className="text-lg font-bold  text-purple-500">
+              Current Focus
+            </h3>
           </div>
           <ul className="text-gray-700 dark:text-gray-300 list-disc pl-6 space-y-1">
             <li>Backend Mastery(Node | Express | REST APIs) </li>
@@ -71,7 +83,9 @@ export default function About() {
         <div className="glass-card hover:scale-105">
           <div className="flex items-center gap-3 mb-2">
             <FaCheckCircle className="text-xl text-gray-800 dark:text-white" />
-            <h3 className="text-lg font-bold  text-purple-500">What Sets Me Apart</h3>
+            <h3 className="text-lg font-bold  text-purple-500">
+              What Sets Me Apart
+            </h3>
           </div>
           <ul className="text-gray-700 dark:text-gray-300 list-disc pl-6 space-y-1">
             <li>Neon-aesthetic | Minimal Mature design sense </li>

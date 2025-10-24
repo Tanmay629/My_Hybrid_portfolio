@@ -1,22 +1,15 @@
-/* index.css */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* === NEW: Base & Theme Setup === */
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  /* This ensures the background component shows through */
   @apply font-sans bg-transparent;
 }
 
-/* === EXISTING STYLES (UNCHANGED) === */
-
-/* 🌈 Glass Card */
 .glass-card {
   position: relative;
   border-radius: 1rem;
@@ -65,13 +58,7 @@ body {
   z-index: -1;
   border-radius: 1rem;
   padding: 2px;
-  background: linear-gradient(
-    90deg,
-    #ff6ec4,
-    #7873f5,
-    #4ade80,
-    #facc15
-  );
+  background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80, #facc15);
   background-size: 300% 300%;
   box-sizing: border-box;
   opacity: 0;
@@ -79,14 +66,10 @@ body {
   pointer-events: none;
 
   /* Simulate border around card */
-  mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
 
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
 }
 
@@ -96,12 +79,17 @@ body {
 }
 
 @keyframes rainbow {
-  0%   { background-position: 0% 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
-/* Gradient Text */
 .gradient-text {
   background: linear-gradient(90deg, #00ffff, #8a2be2, #ff00ff, #00ffff);
   background-size: 300%;
@@ -111,11 +99,14 @@ body {
 }
 
 @keyframes gradientFlow {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
-/* Tech Icons */
 .tech-icon {
   inline-size: 34px;
   block-size: 34px;
@@ -126,8 +117,12 @@ body {
 }
 
 @keyframes slowSpin {
-  0%   { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .animate-slowSpin {
   animation: slowSpin 40s linear infinite;
@@ -137,29 +132,60 @@ body {
 }
 
 @keyframes floatDot {
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-8px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
 }
-
 
 /* === NEW: Keyframes for Animated Blobs === */
 @keyframes animate-blob-1 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  25% { transform: translate(40px, -60px) scale(1.1); }
-  50% { transform: translate(80px, 20px) scale(0.9); }
-  75% { transform: translate(-20px, 50px) scale(1.05); }
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(40px, -60px) scale(1.1);
+  }
+  50% {
+    transform: translate(80px, 20px) scale(0.9);
+  }
+  75% {
+    transform: translate(-20px, 50px) scale(1.05);
+  }
 }
 
 @keyframes animate-blob-2 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  25% { transform: translate(-50px, 30px) scale(1.1); }
-  50% { transform: translate(-20px, -70px) scale(0.95); }
-  75% { transform: translate(40px, -20px) scale(1); }
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(-50px, 30px) scale(1.1);
+  }
+  50% {
+    transform: translate(-20px, -70px) scale(0.95);
+  }
+  75% {
+    transform: translate(40px, -20px) scale(1);
+  }
 }
 
 @keyframes animate-blob-3 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  25% { transform: translate(30px, 30px) scale(1.1); }
-  50% { transform: translate(-40px, -40px) scale(0.9); }
-  75% { transform: translate(20px, -20px) scale(1.05); }
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(30px, 30px) scale(1.1);
+  }
+  50% {
+    transform: translate(-40px, -40px) scale(0.9);
+  }
+  75% {
+    transform: translate(20px, -20px) scale(1.05);
+  }
 }

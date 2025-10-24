@@ -13,30 +13,25 @@ import Footer from "./components/Footer";
 import Resume from "./components/Resume";
 
 export default function App() {
-  // Language index syncs the animated circle color in the navbar
   const [langIndex, setLangIndex] = useState(0);
 
   return (
     <main className="relative min-h-screen bg-neutral-100 dark:bg-black text-black dark:text-white transition-colors duration-500 overflow-x-hidden">
-      {/* Top Navbar - inset-inline-start: Name + Circle | inset-inline-end: Theme Toggle */}
       <Navbar langIndex={langIndex} />
       <ThemeToggle />
 
-      {/* Animated geometric background */}
       <BackgroundShapes />
 
-      {/* Hero section with dynamic name & scroll indicator */}
       <Hero onLanguageChange={setLangIndex} />
 
-      {/* About Section after Hero */}
       <About />
-      <Skills/>
-      <Projects/>
-      <Experience/>
-      <Certifications/>
-      <Resume/>
-      <Contact/>
-      <Footer/>
+      <Skills />
+      <Projects />
+      <Experience />
+      <Certifications />
+      <Resume />
+      <Contact />
+      <Footer />
     </main>
   );
 }
